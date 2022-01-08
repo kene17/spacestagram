@@ -1,0 +1,40 @@
+{
+  "name": "reactjs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.7",
+    "axios": "^0.24.0",
+    "bootstrap": "^5.0.2",
+    "react": "^16.11.0",
+    "react-bootstrap": "^2.0.0-rc.1",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^6.1.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
