@@ -1,5 +1,5 @@
-.jumbotron{
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(../../images/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
+.like-page{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(../images/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,12 +10,7 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
-.jumbotron h1, h2{
+.like-page h1{
     color: white;
-    
-}
-.input-button{
-    width:50%;
-    margin-top: 30px;
-}
 
+}

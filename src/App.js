@@ -5,6 +5,7 @@ import ExplorePage from "./pages/ExplorePage";
 import { Helmet } from "react-helmet";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import AppContext from "./context";
+import LikePage from "./pages/LikePage";
 
 const App = () => {
   return (
@@ -16,10 +17,15 @@ const App = () => {
         <meta name="description" content="Helmet application" />
       </Helmet>
       <AppContext>
+      <NavBar />
         <Switch>
           <Route exact path="/">
-            <NavBar />
+            
             <ExplorePage />
+
+          </Route>
+          <Route exact path="/liked">
+            <LikePage />
           </Route>
         </Switch>
       </AppContext>

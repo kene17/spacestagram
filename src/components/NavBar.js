@@ -8,8 +8,12 @@ const NavBar = () => {
         <LinkContainer to="/">
           <Navbar.Brand>Spacestagram</Navbar.Brand>
         </LinkContainer>
+        <LinkContainer to="/liked">
+          <Navbar.Brand>Liked</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
+    
       <Navbar.Text>
         API Credit: NASA API - APOD
       </Navbar.Text>

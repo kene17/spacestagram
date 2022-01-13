@@ -29,8 +29,8 @@ const Jumbotron = () => {
 
   return (
     <div className="jumbotron">
-      <h1>Welcome</h1>
-      <h2>You can search for some awesome pictures from NASA</h2>
+      <h1>Welcome!</h1>
+      <h2>Search for awesome pictures from NASA</h2>
       <div className="input-button">
         <InputGroup className="mb-3">
           <FormControl

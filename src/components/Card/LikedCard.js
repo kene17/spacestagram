@@ -1,28 +1,18 @@
 import Modal from "../Modal/ModalComponent";
 import "./card.css";
-import React, { useContext } from "react";
+import React,{ useContext} from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Button } from "react-bootstrap";
-import { MyContext } from "../../context";
+import {MyContext} from "../../context"
 
-const NasaCard = (props) => {
-  const [like, setLike] = React.useState(false);
-  const { likedData, setLikedData } = useContext(MyContext);
+const LikedCard = (props) => {
+  
+  const {like, setLike} = useContext(MyContext);
   const handleLiked = () => {
     setLike(!like);
-    const card = {
-      title: props.title,
-      explanation: props.explanation,
-      date: props.date,
-      url: props.url,
-    }
-    const arr = [...likedData, card]
-    console.log(arr);
-    setLikedData(arr);
-    //console.log(props.handleSavedPost());
-    //props.handleSavedPost();
+    
   };
   return (
     <Card
@@ -54,4 +44,4 @@ const NasaCard = (props) => {
   );
 };
 
-export default NasaCard;
+export default LikedCard;
