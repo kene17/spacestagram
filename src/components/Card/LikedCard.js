@@ -6,7 +6,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Button } from "react-bootstrap";
 import {MyContext} from "../../context"
-
+import Typography from '@mui/material/Typography';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import { pink } from '@mui/material/colors';
 const LikedCard = (props) => {
   
   const {like, setLike} = useContext(MyContext);
@@ -26,16 +28,18 @@ const LikedCard = (props) => {
         alt={props.title}
       />
 
-      <CardContent sx={{ px: 4, height: "20%" }}>
-        <h3 className="card_header">{props.title}</h3>
+      <CardContent>
+        
+        <h3>{props.title}</h3>
+        <Typography variant="body2" color="text.secondary">
+          This impressive picture is a gotten from the Nasa API, One of the most popular websites at NASA is the Astronomy Picture of the Day.
+          you can see all the information about this picture below.
+        </Typography>
+        <br />
         <p>{props.date}</p>
 
         <Modal explanation={props.explanation} title={props.title} />
-        <div className="like-button">
-          <Button variant="secondary" onClick={handleLiked}>
-            {!like ? "Like" : "Liked"}
-          </Button>
-        </div>
+        
         <div className="overlay d-flex align-items-center justify-content">
           {" "}
         </div>
