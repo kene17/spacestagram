@@ -13,7 +13,7 @@ const LikePage = () => {
         {likedData.length > 0 && !like ? (
           <LikedComponent />
         ) : (
-          <h1 className="centered">No Liked Photos</h1>
+          <h4 className="centered">No Liked Photos</h4>
         )}
       </div>
     </div>
