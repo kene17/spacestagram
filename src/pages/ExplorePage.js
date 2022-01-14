@@ -11,8 +11,6 @@ const ExplorePage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-
-
   useEffect(() => {
     async function fetchDataHandler() {
       setIsLoading(true);
@@ -39,23 +37,25 @@ const ExplorePage = () => {
       <Jumbotron />
       {!isLoading && fetchedData.length > 0 && (
         <ul>
-      <div
-        style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
-      >
-        {fetchedData.map((data, idx) => (
-          <NasaCard
-            key={idx}
-            id={Math.floor(Math.random() * 100)}
-            url={data.url}
-            title={data.title}
-            explanation={data.explanation}
-            date={data.date}
-            
-          />
-        ))}
-      </div>
-    </ul>
-        //<NasaComponent dataSet={fetchedData} isLikedPost={false}/>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            {fetchedData.map((data, idx) => (
+              <NasaCard
+                key={idx}
+                id={Math.floor(Math.random() * 100)}
+                url={data.url}
+                title={data.title}
+                explanation={data.explanation}
+                date={data.date}
+              />
+            ))}
+          </div>
+        </ul>
       )}
       {!isLoading && fetchedData.length === 0 && !error && (
         <p>Found No Pictures</p>

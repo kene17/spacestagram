@@ -14,3 +14,11 @@
       transform: rotate(360deg);
     }
   }
+
+  .centered {
+    margin: 3rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

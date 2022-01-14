@@ -7,10 +7,14 @@ const LikePage = () => {
   return (
     <div>
       <div className="like-page">
-          <h1>View Liked Images</h1>
+        <h1>View Liked Images</h1>
       </div>
       <div>
-        {likedData.length > 0 && !like ? <LikedComponent /> : <h1>No Liked Photos</h1>}
+        {likedData.length > 0 && !like ? (
+          <LikedComponent />
+        ) : (
+          <h1 className="centered">No Liked Photos</h1>
+        )}
       </div>
     </div>
   );

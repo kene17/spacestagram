@@ -1,0 +1,19 @@
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(../../images/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+
+  bottom: 0;
+}
+
+.footer h6 {
+  color: white;
+}
